@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Focus Mode",
+    "version": "1.0",
+    "description": "Help you stay focused by blocking distracting websites",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "focus_mode",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    },
+    "permissions": [
+      "storage",
+      "activeTab",
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback",
+      "contextMenus"
+    ],
+    "host_permissions": ["http://*/", "https://*/"],
+    "options_page": "options.html"
+  }

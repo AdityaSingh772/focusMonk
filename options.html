@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>focusMonk Options</title>
+    <style>
+      body {
+        width: 400px;
+        height: 200px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>focusMonk Options</h1>
+    <form>
+      <label for="time">Set timer for:</label>
+      <input type="number" id="time" value="30" min="1" max="120"> minutes
+      <br><br>
+      <label for="blocked-sites">Blocked sites (comma separated):</label>
+      <input type="text" id="blocked-sites" value="facebook.com, twitter.com, instagram.com">
+      <br><br>
+      <button id="save-options">Save Options</button>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
