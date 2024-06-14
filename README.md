@@ -1,2 +1,2 @@
 # focusMonk
-updating soon ..
+ This is the google chrome extension to block the distracting websites like facebook, instagram, twitter, etc while the focus timer is there. The timer initially is set at 30 minutes which can be adjusted in the options tab of the extension. There is an option to update the list of websites which you want to block during the focus mode. Super handy extension, try it out and let me know how good is it.
